@@ -7,51 +7,80 @@
 </head>
 <body>
 
-  <!-- Background hearts -->
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mp3">
+    Your browser does not support audio.
+  </audio>
+
+  <!-- Floating Hearts -->
   <div class="hearts"></div>
 
-  <!-- Pages -->
+  <!-- PAGE 1 : WELCOME -->
   <section class="page active" id="page1">
     <h1>Welcome VaishSu ❤️</h1>
-    <p>This little space is made just for you...</p>
+    <p>This little space is made just for you…</p>
     <button onclick="nextPage()">Enter</button>
   </section>
 
+  <!-- PAGE 2 : CUSTOM PAGE 1 -->
   <section class="page" id="page2">
-    <h1>Our Story ✨</h1>
+    <h1>✨ Page One ✨</h1>
     <p>
-      From the moment we started talking, something felt different.
-      Your presence brings calm, smiles, and warmth into my life.
+      <!-- ✏️ PUT YOUR POEM / STORY PART 1 HERE -->
+      Write your poem or story here.
+      You can write multiple lines.
     </p>
-    <button onclick="nextPage()">Next</button>
+
+    <div class="nav-buttons">
+      <button onclick="prevPage()">⬅ Back</button>
+      <button onclick="nextPage()">Next ➡</button>
+    </div>
   </section>
 
+  <!-- PAGE 3 : CUSTOM PAGE 2 -->
   <section class="page" id="page3">
-    <h1>Why You Matter 💖</h1>
+    <h1>💖 Page Two 💖</h1>
     <p>
-      You are my comfort, my laughter, my strength.
-      Every conversation with you feels like home.
+      <!-- ✏️ PUT YOUR POEM / STORY PART 2 HERE -->
+      Continue your story here.
     </p>
-    <button onclick="nextPage()">Next</button>
+
+    <div class="nav-buttons">
+      <button onclick="prevPage()">⬅ Back</button>
+      <button onclick="nextPage()">Next ➡</button>
+    </div>
   </section>
 
+  <!-- PAGE 4 : CUSTOM PAGE 3 -->
   <section class="page" id="page4">
-    <h1>A Promise 🌙</h1>
+    <h1>🌙 Page Three 🌙</h1>
     <p>
-      I promise to stand by you, respect you,
-      support your dreams, and cherish every moment.
+      <!-- ✏️ PUT YOUR POEM / STORY PART 3 HERE -->
+      Emotional or special part goes here.
     </p>
-    <button onclick="nextPage()">Next</button>
+
+    <div class="nav-buttons">
+      <button onclick="prevPage()">⬅ Back</button>
+      <button onclick="nextPage()">Next ➡</button>
+    </div>
   </section>
 
+  <!-- PAGE 5 : CUSTOM PAGE 4 -->
   <section class="page" id="page5">
-    <h1>Will You Be Mine? 💍</h1>
+    <h1>💍 One Last Thing 💍</h1>
     <p>
-      Not just today, but in every tomorrow.
+      <!-- ✏️ FINAL MESSAGE / PROPOSAL -->
+      Will you be mine?
     </p>
+
     <div class="buttons">
       <button class="yes">YES ❤️</button>
       <button class="no" onclick="moveNo()">NO 🙈</button>
+    </div>
+
+    <div class="nav-buttons">
+      <button onclick="prevPage()">⬅ Back</button>
     </div>
   </section>
 
